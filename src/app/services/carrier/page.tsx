@@ -16,7 +16,7 @@ export default function CarrierPage() {
         </div>
         <Seperator/>
         <div id="Content.ServicesDisplayContainers" className="w-full flex flex-col xl:flex-row gap-6">
-            <div className="w-1/6 xl:w-2/5 xl:mr-auto">
+            <div className="xl:w-2/5 xl:mr-auto">
                 <h1 className="title">IP Transit</h1>
                 <h3 className="subtitle">Get fast connectivity and IP addresses anywhere your business works.</h3>
 
