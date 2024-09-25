@@ -13,4 +13,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: 22
-        script: cd /opt/nixlabs-landing; git pull; pnpm run build; sudo /scripts/restart-landing.sh
+        script: cd /opt/nixlabs-landing; git pull; pnpm i; pnpm run build; sudo /scripts/restart-landing.sh
