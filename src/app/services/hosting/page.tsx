@@ -16,7 +16,7 @@ export default function HostingPage() {
         </div>
         <div className="h-seperator"/>
         <div id="Content.ServicesDisplayContainers" className="w-full flex flex-col xl:flex-row gap-6">
-            <div className="xl:w-3/5 xl:mr-auto">
+            <div className="xl:w-2/5 xl:mr-auto">
                 <h1 className="title">Managed by us</h1>
                 <h3 className="subtitle">Dont have hardware? Our Virtual and Dedicated compute options give you the flexibility to run any workload you need.</h3>
 
@@ -39,12 +39,12 @@ export default function HostingPage() {
             <div  className="border-r border-white"/>
             <div className="xl:w-2/5 rounded-xl flex flex-col gap-4">
                 <div className="flex flex-col">
-                    <h1 className="title">Dedicated Systems</h1>
-                    <h2 className="subtitle">Fully dedicated hardware, down to the physical box.</h2>
+                    <h1 className="text-white text-2xl font-bold">Dedicated Systems</h1>
+                    <h2 className="text-sm text-zinc-400">Fully dedicated hardware, down to the physical box.</h2>
                 </div>
                 <div>
                     <ul className="list-disc list-inside">
-                        <li>Dedicated resources for demanding workloads</li>
+                        <li>Fully dedicated resources</li>
                         <li>24/7 Access to IPMI!</li>
                         <li>Premium hardware built to last</li>
                         <li>No hardware worries, just install and go!</li>
@@ -55,9 +55,9 @@ export default function HostingPage() {
         </div>
         <Seperator/>
         <div id="Content.ServicesDisplayContainers" className="w-full flex flex-col xl:flex-row gap-6">
-        <div className="xl:w-3/5 xl:mr-auto">
-                <h1 className="text-white text-4xl font-bold">Managed by you</h1>
-                <h3 className="text-zinc-400 text-lg mt-2 w-2/3">Have your own hardware? Bring it to us! We will rack, stack, and get you ready to attack your workloads!</h3>
+        <div className="xl:w-2/5 xl:mr-auto">
+                <h1 className="title">Managed by you</h1>
+                <h3 className="subtitle">Have your own hardware? Bring it to us! We will rack, stack, and get you ready to attack your workloads!</h3>
 
             </div>
             <div className="xl:w-2/5 rounded-xl flex flex-col gap-4">

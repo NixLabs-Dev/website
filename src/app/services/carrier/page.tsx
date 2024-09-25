@@ -16,15 +16,15 @@ export default function CarrierPage() {
         </div>
         <Seperator/>
         <div id="Content.ServicesDisplayContainers" className="w-full flex flex-col xl:flex-row gap-6">
-            <div className="xl:w-3/5 xl:mr-auto">
-                <h1 className="title">Carrier Services</h1>
-                <h3 className="subtitle">Our host of carrier-grade services tailored to make your network blazingly fast.</h3>
+            <div className="w-1/6 xl:w-2/5 xl:mr-auto">
+                <h1 className="title">IP Transit</h1>
+                <h3 className="subtitle">Get fast connectivity and IP addresses anywhere your business works.</h3>
 
             </div>
             <div className="xl:w-2/5 rounded-xl flex flex-col gap-4">
                 <div className="flex flex-col">
-                    <h1 className="text-white text-2xl font-bold">IP Transit</h1>
-                    <h2 className="text-sm text-zinc-400">Direct connectivity in any of our POP's for the best price</h2>
+                    <h1 className="text-white text-2xl font-bold">Direct Transit</h1>
+                    <h2 className="text-sm text-zinc-400">Customized direct connectivity in any of our POP's</h2>
                 </div>
                 <div>
                     <ul className="list-disc list-inside">
@@ -38,8 +38,8 @@ export default function CarrierPage() {
             <div  className=" border-r border-white hidden xl:block"/>
             <div className="xl:w-2/5 rounded-xl flex flex-col gap-4">
                 <div className="flex flex-col">
-                    <h1 className="text-white text-2xl font-bold">Tunneled Transit</h1>
-                    <h2 className="text-sm text-zinc-400">Remote connectivity for sites outside of our POP's</h2>
+                    <h1 className="text-white text-2xl font-bold">Remote Transit</h1>
+                    <h2 className="text-sm text-zinc-400">Connectivity for remote sites, regardless of location.</h2>
                 </div>
                 <div>
                     <ul className="list-disc list-inside">
