@@ -6,7 +6,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-5xl font-bold">Our networks power your</h1>
-          <h1 className="text-4xl 2xl:text-5xl text-purple-500 font-bold">
+          <h1 className="text-4xl lg:text-5xl text-purple-500 font-bold">
             <ReactTyped
               strings={[
                 'Silicon-Valley Startup', 

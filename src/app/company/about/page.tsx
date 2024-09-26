@@ -1,8 +1,8 @@
 import Image from "next/image";
-import OwenImage from "@/res/people/owen.jpg"
-import MichaelImage from "@/res/people/michael.jpg"
-import NathanImage from "@/res/people/nathan.jpg"
-import MinemanImage from "@/res/people/mineman.jpg"
+import OwenImage from "@public/people/owen.jpg"
+import MichaelImage from "@public/people/michael.jpg"
+import NathanImage from "@public/people/nathan.jpg"
+import MinemanImage from "@public/people/mineman.jpg"
 import Seperator from "@/components/Seperator";
 
 export default function HostingPage() {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RackImage from "@/res/rack.jpg"
+import RackImage from "@public/rack.jpg"
 import CallToAction from "@/components/CallToAction";
 import Seperator from "@/components/Seperator";
 

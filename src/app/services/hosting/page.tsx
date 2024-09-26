@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ServerImage from "@/res/server.jpg"
+import ServerImage from "@public/server.jpg"
 import CallToAction from "@/components/CallToAction";
 import Seperator from "@/components/Seperator";
 
