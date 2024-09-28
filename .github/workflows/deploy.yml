@@ -6,24 +6,37 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-    - name: executing remote ssh commands using password
+    - name: Clone new sources
       uses: appleboy/ssh-action@v1.0.3
       with:
         host: nixlabs.dev
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: 22
-        script: cd /opt/nixlabs-landing; git pull; docker build -t nixlabs/website:${{ github.head_ref }} .
+        script: |
+          git clone https://github.com/NixLabs-dev/website /tmp/website
+    - name: Build docker image
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: nixlabs.dev
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: 22
+        script: |
+          cd /tmp/website
+          docker build -t nixlabs/website .
   deploy:
     name: Re-run image
     runs-on: ubuntu-latest
     environment: production
     steps:
-    - name: executing remote ssh commands using password
+    - name: Restart docker compose with new image
       uses: appleboy/ssh-action@v1.0.3
       with:
         host: nixlabs.dev
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: 22
-        script: docker rm --force nxl-landing; docker run -p 3000:80 nixlabs/website:${{ github.head_ref }}
+        script: |
+          docker compose -f website.yml pull
+          docker compose -f website.yml up -d
