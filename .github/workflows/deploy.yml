@@ -6,6 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
+    - name: Cleanup old possible files
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: nixlabs.dev
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: 22
+        script: |
+          rm -rf /tmp/website
     - name: Clone new sources
       uses: appleboy/ssh-action@v1.0.3
       with:
@@ -24,6 +33,14 @@ jobs:
         port: 22
         script: |
           docker build -t nixlabs/website /tmp/website
+    - name: Cleanup leftover files
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: nixlabs.dev
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: 22
+        script: |
           rm -rf /tmp/website
   deploy:
     name: Re-run image
