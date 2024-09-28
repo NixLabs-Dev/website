@@ -10,7 +10,8 @@ export default function HostingPage() {
             <div className="xl:w-3/4">
                 <h1 className="title">Premium Hosting Services</h1>
                 <h3 className="subtitle">Cost-effective dedicated, virtualizaed, and physical solutions to take you to the next level.</h3>
-                <p className="body">Built on the shouldiers of giants, our datacenter is comprised of quality Dell servers running tried and tested Debian Linux with VirtFusion as our hypervisor on top. Every server is backed by SSD storage, DDR4 RAM and high-frequency Xeon processors designed to give you optimal performance without breaking the bank. Our dedicated line is completely managed-hardware. You install your workload, and we do the rest.</p>
+                <p className="body">Built on the shoulders of giants, our data center features a robust array of high-quality Dell servers, all running the reliable and time-tested Debian Linux with the industry-standard KVM hypervisor. Each server is equipped with lightning-fast SSD storage, ample DDR4 RAM, and high-frequency Xeon processors, ensuring optimal performance while remaining cost-effective.</p>
+                <p className="body">Our dedicated line utilizes fully managed hardware, providing you with the freedom to install your workload while we take care of everything else. We understand that each customer has unique needs, which is why we pride ourselves on delivering tailored solutions. If it’s physically possible, we’ll make it happen, working closely with you to ensure your specific requirements are met with precision and care.</p>
             </div>
             <Image src={ServerImage} alt="Test" className="rounded-md hidden xl:block w-1/3"/>
         </div>
@@ -32,7 +33,7 @@ export default function HostingPage() {
                         <li>20+ OS Templates</li>
                         <li>Powered by Intel Xeons with DDR4</li>
                         <li>Blazing fast RAID5 SSD backed storage</li>
-                        <li>Backed by our 40G redundant core</li>
+                        <li>Backed by our carrier-grade network</li>
                     </ul>
                 </div>
             </div>
@@ -48,7 +49,7 @@ export default function HostingPage() {
                         <li>24/7 Access to IPMI!</li>
                         <li>Premium hardware built to last</li>
                         <li>No hardware worries, just install and go!</li>
-                        <li>Backed by our 40G redundant core</li>
+                        <li>Backed by our carrier-grade network</li>
                     </ul>
                 </div>
             </div>

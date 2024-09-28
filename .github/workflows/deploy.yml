@@ -1,8 +1,8 @@
 name: deploy on webserver
 on: [push]
 jobs:
-  deploy:
-    name: Clone updates
+  build:
+    name: Build Image
     runs-on: ubuntu-latest
     environment: production
     steps:
@@ -13,4 +13,17 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: 22
-        script: cd /opt/nixlabs-landing; git pull; pnpm i; pnpm run build; sudo /scripts/restart.sh landing
+        script: cd /opt/nixlabs-landing; git pull; docker build -t nixlabs/website:${{ github.head_ref }} .
+  deploy:
+    name: Re-run image
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: nixlabs.dev
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: 22
+        script: docker rm --force nxl-landing; docker run -p 3000:80 nixlabs/website:${{ github.head_ref }}

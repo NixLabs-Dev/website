@@ -21,10 +21,11 @@ export default function Home() {
           </h1>
         </div>
         <p className="text-xl 2xl:w-2/3 text-center mt-8">Boldly powering projects across the net with affordable, stable, and reliable network, cloud, and collocation services. Built by the people, for the people.</p>
-        <div className="flex flex-col md:flex-row gap-12 mt-12">
+        {/* Temp remove the links, migth add back later */}
+        {/* <div className="flex flex-col md:flex-row gap-12 mt-12">
           <a href="/services/carrier" className="px-4 py-2 bg-purple-500 rounded-lg text-2xl xl:text-base">Carrier Services</a>
           <a href="/services/hosting" className="px-4 py-2 bg-indigo-500 rounded-lg text-2xl xl:text-base">Hosting Services</a>
-        </div>
+        </div> */}
     </div>  
   );
 }
