@@ -15,6 +15,7 @@ jobs:
         port: 22
         script: |
           git clone https://github.com/NixLabs-dev/website /tmp/website
+          rm -rf /tmp/website
     - name: Build docker image
       uses: appleboy/ssh-action@v1.0.3
       with:
