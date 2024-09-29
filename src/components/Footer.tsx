@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Logo from "@public/logo.png"
 
 export default function Footer() {
   return (
@@ -7,7 +5,7 @@ export default function Footer() {
         <div className="mx-16 my-2 flex flex-row" >
                 <div className="mr-auto">
                     <a href="/" className="flex flex-row gap-2 cursor-pointer items-center hover:opacity-90" >
-                         <Image src={Logo} alt="NixLabs Logo" className="h-8 w-8" id="Navbar.Container.Logo"/>
+                         <img src={"/logo.png"} alt="NixLabs Logo" className="h-8 w-8" id="Navbar.Container.Logo"/>
                         <h1 className="text-2xl font-semibold mt-2">NixLabs Networks</h1>
                     </a>
 

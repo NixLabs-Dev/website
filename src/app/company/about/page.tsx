@@ -1,8 +1,3 @@
-import Image from "next/image";
-import OwenImage from "@public/people/owen.jpg"
-import MichaelImage from "@public/people/michael.jpg"
-import NathanImage from "@public/people/nathan.jpg"
-import MinemanImage from "@public/people/mineman.jpg"
 import Seperator from "@/components/Seperator";
 
 export default function HostingPage() {
@@ -23,22 +18,22 @@ export default function HostingPage() {
             </div>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 <div className="flex flex-col items-center">
-                    <Image src={OwenImage} alt="Owen Rummage Headshot" className="w-1/3 xl:w-24 rounded-full mb-2"/>
+                    <img src={"/people/owen.jpg"} alt="Owen Rummage Headshot" className="w-1/3 xl:w-24 rounded-full mb-2"/>
                     <h1 className="text-white    text-3xl xl:text-xl font-bold">Owen Rummage</h1>
                     <h2 className="text-zinc-400 text-lg  xl:text-sm">Chief Executive Officer</h2>
                 </div>
                 <div className="flex flex-col items-center">
-                    <Image src={MichaelImage} alt="Owen Rummage Headshot" className="w-1/3 xl:w-24 rounded-full mb-2"/>
+                    <img src={"/people/michael.jpg"} alt="Owen Rummage Headshot" className="w-1/3 xl:w-24 rounded-full mb-2"/>
                     <h1 className="text-white    text-3xl xl:text-xl font-bold">Michael Garofalo</h1>
                     <h2 className="text-zinc-400 text-lg  xl:text-sm">Systems Administrator</h2>
                 </div>
                 <div className="flex flex-col items-center">
-                    <Image src={NathanImage} alt="Owen Rummage Headshot" className="w-1/3 xl:w-24 rounded-full mb-2"/>
+                    <img src={"/people/nathan.jpg"} alt="Owen Rummage Headshot" className="w-1/3 xl:w-24 rounded-full mb-2"/>
                     <h1 className="text-white    text-3xl xl:text-xl font-bold">Nathan Roberts</h1>
                     <h2 className="text-zinc-400 text-lg  xl:text-sm">Support</h2>
                 </div>
                 <div className="flex flex-col items-center">
-                    <Image src={MinemanImage} alt="Owen Rummage Headshot" className="w-1/3 xl:w-24 rounded-full mb-2"/>
+                    <img src={"/people/mineman.jpg"} alt="Owen Rummage Headshot" className="w-1/3 xl:w-24 rounded-full mb-2"/>
                     <h1 className="text-white    text-3xl xl:text-xl font-bold">Mineman</h1>
                     <h2 className="text-zinc-400 text-lg  xl:text-sm">Support</h2>
                 </div>

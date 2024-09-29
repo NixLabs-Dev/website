@@ -8,10 +8,10 @@ metadata:
 spec:
  tls:
    - hosts:
-       - test.nixlabs.dev
+       - nixlabs.dev
      secretName: tls-website-ingress-http
  rules:
-   - host: test.nixlabs.dev
+   - host: nixlabs.dev
      http:
        paths:
          - path: /

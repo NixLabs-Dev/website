@@ -1,5 +1,3 @@
-import Image from "next/image";
-import ServerImage from "@public/server.jpg"
 import CallToAction from "@/components/CallToAction";
 import Seperator from "@/components/Seperator";
 
@@ -13,7 +11,7 @@ export default function HostingPage() {
                 <p className="body">Built on the shoulders of giants, our data center features a robust array of high-quality Dell servers, all running the reliable and time-tested Debian Linux with the industry-standard KVM hypervisor. Each server is equipped with lightning-fast SSD storage, ample DDR4 RAM, and high-frequency Xeon processors, ensuring optimal performance while remaining cost-effective.</p>
                 <p className="body">Our dedicated line utilizes fully managed hardware, providing you with the freedom to install your workload while we take care of everything else. We understand that each customer has unique needs, which is why we pride ourselves on delivering tailored solutions. If it’s physically possible, we’ll make it happen, working closely with you to ensure your specific requirements are met with precision and care.</p>
             </div>
-            <Image src={ServerImage} alt="Test" className="rounded-md hidden xl:block w-1/3"/>
+            <img src={"/server.jpg"} alt="Test" className="rounded-md hidden xl:block w-1/3"/>
         </div>
         <div className="h-seperator"/>
         <div id="Content.ServicesDisplayContainers" className="w-full flex flex-col xl:flex-row gap-6">

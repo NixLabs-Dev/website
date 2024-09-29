@@ -1,5 +1,3 @@
-import Image from "next/image";
-import RackImage from "@public/rack.jpg"
 import CallToAction from "@/components/CallToAction";
 import Seperator from "@/components/Seperator";
 
@@ -15,7 +13,7 @@ export default function CarrierPage() {
                 <p className="body">We’re more than just a hosting company; we’re a community of learners, engineers, and pioneers shaping the future of technology. Our commitment extends far beyond uptime—we constantly innovate and refine to ensure your services run seamlessly, no matter the challenge. Reliability isn’t just a goal for us—it’s a promise to be there when you need us most. Because at the end of the day, we are hobbyists just like you.</p>
                 <p className="w-full flex flex-row justify-center mt-8">We have never just meet the bar—we set it.</p>
             </div>
-            <Image src={RackImage} alt="Test" className="rounded-md hidden xl:block w-1/3"/>
+            <img src={"/rack.jpg"} alt="Test" className="rounded-md hidden xl:block w-1/3"/>
         </div>
         <Seperator/>
         <div id="Content.ServicesDisplayContainers" className="w-full flex flex-col xl:flex-row gap-6">
