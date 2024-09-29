@@ -1,6 +1,5 @@
 name: deploy to production
 on: [push]
-env
 jobs:
   build:
     name: Build
