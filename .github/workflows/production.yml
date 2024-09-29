@@ -12,15 +12,15 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: owenrummage
+          password: ${{ secrets.REGISTRY_TOKEN }}
 
       - name: Build and push the Docker image
         uses: docker/build-push-action@v3
         with:
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:${{github.sha}}
+            ghcr.io/nixlabs-networks/website:${{github.sha}}
   deploy:
     name: Deploy
     needs: [ build ]
@@ -45,4 +45,4 @@ jobs:
             kubernetes/ingress.yaml
             kubernetes/service.yaml
           images: |
-            ghcr.io/${{ github.repository }}:${{github.sha}}
+            ghcr.io/nixlabs-networks/website:${{github.sha}}
