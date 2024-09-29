@@ -43,8 +43,8 @@ jobs:
         with:
           namespace: default
           manifests: |
-            .kube/deployment.yaml
-            .kube/ingress.yaml
-            .kube/service.yaml
+            manifests/deployment.yaml
+            manifests/ingress.yaml
+            manifests/service.yaml
           images: |
             ghcr.io/nixlabs-dev/website:${{github.sha}}
