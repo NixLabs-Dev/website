@@ -20,7 +20,7 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/nixlabs-networks/website:${{github.sha}}
+            ghcr.io/nixlabs-dev/website:${{github.sha}}
   deploy:
     name: Deploy
     needs: [ build ]
@@ -45,4 +45,4 @@ jobs:
             kubernetes/ingress.yaml
             kubernetes/service.yaml
           images: |
-            ghcr.io/nixlabs-networks/website:${{github.sha}}
+            ghcr.io/nixlabs-dev/website:${{github.sha}}
